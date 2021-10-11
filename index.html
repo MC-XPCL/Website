@@ -198,10 +198,17 @@
                                 <h4 class="card-title">
                                     Client
                                 </h4>
-                                <ul class="list-group">
+
+                                <!-- <ul class="list-group">
                                     <li class="list-group-item" id="version-info">Version: loading...</li>
                                 </ul>
-                                <a onclick="dl(true)" class="btn">Download</a>
+                                <a onclick="dl(true)" class="btn">Download</a> -->
+
+                                <ul>
+                                    <li>(Password: XPCL)</li>
+                                    <a href="https://url36.ctfile.com/d/23959736-45249089-69f247">Download</a>
+                                </ul>
+
                             </div>
                         </div>
                     </div>
@@ -275,7 +282,7 @@
     <script>
         var version = null
 
-        $.get("https://api.github.com/repos/MC-XPCL/Client/releases/latest", function(data, status) {
+        /* $.get("https://api.github.com/repos/MC-XPCL/Client/releases/latest", function(data, status) {
             try {
                 $("#version-info").html("Version: " + data.tag_name)
                 version = data.tag_name
@@ -295,9 +302,9 @@
             $("#stars-info").html(data.stargazers_count)
         });
 
-        /* $.get("https://bstats.org/api/v1/plugins/11076/charts/servers/data", function(data, status) {
+        $.get("https://bstats.org/api/v1/plugins/11076/charts/servers/data", function(data, status) {
             $("#users-info").html(data[data.length - 1][1])
-        }); */
+        });
 
         $.get("https://api.github.com/repos/MC-XPCL/Client/contributors", function(data, status) {
             $("#contributors-info").html(data.length)
@@ -338,7 +345,7 @@
                             break;
                     }
                 })
-        }
+        } */
     </script>
 
     <!-- Template Main Javascript File -->

@@ -47,7 +47,6 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#download">Download</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="https://www.yuque.com/xpcl/updatelog">UpdateLog</a></li>
                     <li><a href="https://github.com/MC-XPCL/Client" class="github"><i class="fa fa-github"></i></a></li>
                     <li><a href="discord.html" class="discord"><i class="fa fa-comments"></i></a></li>
                 </ul>
@@ -199,15 +198,10 @@
                                     Client
                                 </h4>
 
-                                <!-- <ul class="list-group">
+                                <ul class="list-group">
                                     <li class="list-group-item" id="version-info">Version: loading...</li>
                                 </ul>
-                                <a onclick="dl(true)" class="btn">Download</a> -->
-
-                                <ul class="list-group">
-                                    <li class="list-group-item" id="version-info">(Password: XPCL)</li>
-                                </ul>
-                                <a href="https://url36.ctfile.com/d/23959736-45249089-69f247" onclick="dl(true)" class="btn">Download</a>
+                                <a onclick="dl(true)" class="btn">Download</a>
 
                             </div>
                         </div>
@@ -233,10 +227,19 @@
 
                 <ul id="faq-list" class="wow fadeInUp">
                     <li>
-                        <a data-toggle="collapse" href="#faq1" class="collapsed">My problem not in this list<i class="ion-android-remove"></i></a>
+                        <a data-toggle="collapse" href="#faq1" class="collapsed">How to report issues<i class="ion-android-remove"></i></a>
                         <div id="faq1" class="collapse" data-parent="#faq-list">
                             <p>
                                 Create a issue <a style="font-size:large;" href="https://github.com/MC-XPCL/Client/issues">here</a> to let us know.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-toggle="collapse" href="#faq2" class="collapsed">How to sponsor XPCL_Client<i class="ion-android-remove"></i></a>
+                        <div id="faq2" class="collapse" data-parent="#faq-list">
+                            <p>
+                                Sponsor us <a style="font-size:large;" href="https://afdian.net/@xyz8848">here</a>.
                             </p>
                         </div>
                     </li>
@@ -282,7 +285,7 @@
     <script>
         var version = null
 
-        /* $.get("https://api.github.com/repos/MC-XPCL/Client/releases/latest", function(data, status) {
+        $.get("https://api.github.com/repos/MC-XPCL/Client/releases/latest", function(data, status) {
             try {
                 $("#version-info").html("Version: " + data.tag_name)
                 version = data.tag_name
@@ -345,7 +348,7 @@
                             break;
                     }
                 })
-        } */
+        }
     </script>
 
     <!-- Template Main Javascript File -->
